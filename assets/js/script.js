@@ -7,13 +7,13 @@ const total = document.querySelector("#total");
 
 
 resetButton.addEventListener("click", function(e){
-    e.preventDefault()
+    e.preventDefault();
+    total.innerHTML = "";
     form.reset();
 });
 
 resumenButton.addEventListener("click", function(e){
     e.preventDefault();
-    total.innerHTML = "Total a Pagar: $";
     const cantidad = inputCantidad.value;
     let result = cantidad * 200;
 
